@@ -1,0 +1,90 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla|Playfair+Display:400,700,900">
+  <link href="http://emojicss.com/emoji.css" rel="stylesheet">
+
+  <title>My Portfolio</title>
+
+</head>
+
+<body>
+  <div class="dot"></div>
+
+  <div class="nav">
+    <div class="box">
+      <div class="box-content">
+        <div class="say-hello"></div>
+        <div><a href="mailto:varanaz@gmail.com" class='contact'>email</a></div>
+        <div><a href="https://www.linkedin.com/in/virginia-aranaz/" class='contact'>linkedin</a></div>
+        <div><a href="https://twitter.com/varanaz" class='contact'>twitter</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <h1 div class="hello">Hello,<br> I'm Virginia Aranaz
+    </h1>
+
+    <div class="job">
+      <p>Currently Marketing & Editorial Manager at
+        <a href="https://www.nuji.com/" target="_blank" class="company">Nuji</a> and UX student at
+        <a href="https://www.ironhack.com/en" target="_blank" class="company">Ironhack</a>. I will be relaunching
+        <a href="http://www.elcafetero.es/" target="_blank" class="company">elCafetero</a> very soon. Based in Madrid, Spain.
+      </p>
+    </div>
+
+    <div class="interests">
+      <p>I’m interested in great
+        <span class="highlight">user experience</span> , <span class="highlight">design</span>, <span class="highlight">tech</span>,
+        <span class="highlight">art</span> and <span class="highlight">fashion</span>.
+
+        <div class=hobbies>Ah! I also love specialty <span><a href="http://www.elcafetero.es/"target="_blank">&#x2615;</a></span i class="em-coffee" </span> and ocasionally take <span><a href="https://memoriasdesechables.tumblr.com/"target="_blank">&#x1F4F7;</a></span i class="em-camera_with_flash"></span>          .</div>
+      </p>
+    </div>
+
+    <div class="projects">
+      <h4>PROJECTS</h4>
+    </div>
+
+    <div class="project">
+      <p><a href="https://www.nuji.com/" target="_blank">Nuji helps people discover the best fashion and lifestyle goods from across the web.</p></a>
+    </div>
+    <div class='position-date'>Marketing & Editorial - 2011-Present</div>
+
+    <div class="project">
+      <p><a href="https://blog.usejournal.com/national-wellness-institute-case-ux-research-cf5e85f3ce7d" target="_blank">Okaasan helps pregnant women eat well.</p></a>
+    </div>
+    <div class='position-date'>Research, Product Strategy, UX & UI - 2018</div>
+
+    <div class="project">
+      <p><a href="https://twitter.com/imightdo" target="_blank">I Might Do is a curated breakdown of the best food, design and cultural happenings in London.</p></a>
+    </div>
+    <div class='position-date'>Co-founder - 2014</div>
+
+    <div class="project">
+      <p><a href="http://www.elcafetero.es/" target="_blank">elCafetero sells specialty coffee from the best roasters in Spain.</p></a>
+    </div>
+    <div class='position-date'>Co-founder - 2018</div>
+
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "></script>
+  <script>
+    $(".dot").click(function() {
+      $(".nav").toggleClass("visible");
+      $(this).toggleClass('active');
+      $('body').toggleClass('nav-open');
+    });
+  </script>
+
+
+</body>
+
+</html>

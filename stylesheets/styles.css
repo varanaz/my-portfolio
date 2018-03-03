@@ -1,0 +1,192 @@
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.wrapper{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.wrapper2 {
+  margin: 0 auto;
+  margin-left:100px;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: #FFF4E0;
+  border: 4px solid #1B0089;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 50px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+
+.dot.active {
+  background-color: white;
+  border-color:white;
+  position: fixed;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #1B0089, white);
+  opacity: 0;
+  animation: show 1s ease-in forwards;
+}
+
+.nav {
+  display: none;
+}
+
+.nav.visible {
+  display: block;
+}
+
+.nav.visible .box {
+  opacity: 1;
+}
+
+h1{
+  font-size: 100px;
+  font-family: 'Playfair Display', serif;
+  font-weight:900;
+  font-style: normal;
+  padding-top: 100px;
+  margin-left:50px;
+  color: #000000;
+}
+
+body {
+  background-color: #FFF4E0;
+  width:100%;
+  position: relative;
+}
+
+body.nav-open {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+h1::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: #1B0089;
+  border-radius: 50%;
+  display: inline-block;
+  position:relative;
+  left:-20px;
+  bottom:-5px;
+  z-index: -1;
+}
+
+.job {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 30px;
+  font-family:'Karla', sans-serif;
+  }
+
+.interests {
+  font-size: 30px;
+  font-family: 'Karla', sans-serif;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.company {
+  border-bottom: 5px solid  #1B0089
+}
+
+.hobbies {
+  margin-top: 40px;
+}
+
+.hobbies a:hover, .hobbies a:active, .hobbies a:visited{
+  text-decoration: none;
+}
+
+.job a {
+  color: #212529;
+}
+
+.job a:hover, .job a:active, .job a:visited {
+  color: #212529;
+  text-decoration: none;
+
+}
+
+.project a {
+  color: #000000;
+}
+
+.project a:hover, .job a:active {
+  color: #1B0089;
+  text-decoration: none;
+}
+
+h4{
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-weight:400;
+  margin-left:50px;
+  margin-top: 60px;
+  margin-bottom: -20px;
+}
+
+.project {
+  font-size: 60px;
+  font-family: 'Playfair Display', serif;
+  font-weight:900;
+  font-style: normal;
+  margin-top: 40px;
+  margin-left:50px;
+  color: #0000FF;
+}
+
+.position {
+  font-size: 18px;
+  margin-left: 50px;
+  font-family: 'Karla', sans-serif;
+}
+
+.position-date {
+  font-size: 18px;
+  margin-left: 50px;
+  font-family: 'Karla', sans-serif;
+}
+
+
+.say-hello{
+  margin-top: 150px;
+  margin-left: 50px;
+  font-family: 'Karla', sans-serif;
+  font-weight:400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+a.contact {
+  margin-top: 200px;
+  margin-left: 50px;
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  font-size: 50px;
+}
